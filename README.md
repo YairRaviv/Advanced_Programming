@@ -2,70 +2,64 @@
 
 This repository contains a collection of projects, assignments, and implementations from my Advanced Programming coursework at Ariel University.
 
+## Repository Organization Note
+
+This repository is organized by exercises, where each exercise is contained in its own folder (Exercise_X). This structure provides a clean organization of the different advanced programming concepts explored in each assignment.
+
 ## Overview
 
-Advanced Programming explores sophisticated programming concepts, paradigms, and techniques beyond the basics. This repository includes implementations of various advanced programming concepts, design patterns, and complex problem-solving techniques.
+Advanced Programming explores sophisticated programming concepts, paradigms, and techniques beyond the basics. This repository includes implementations of various advanced programming concepts, system programming, and complex problem-solving techniques in the C programming language.
 
 ## Repository Structure
 
-The repository is organized by exercises and projects:
+The repository is organized by exercises:
 
-- **Exercise 1**: [Brief description]
-- **Exercise 2**: [Brief description]
-- **Final Project**: [Brief description]
-- **Common Utilities**: Helper classes and utilities used across assignments
+- **Exercise_1**: Simplified "last" command implementation (slast)
+- **Exercise_2**: Directory tree viewer implementation (stree)
 
 ## Key Topics Covered
 
-- **Advanced Language Features**:
-  - Lambda expressions and functional programming
-  - Streams and collectors
-  - Generics and type inference
-  - Annotations and reflection
-  - Anonymous classes and inner classes
+- **System Programming**:
+  - File I/O operations
+  - Directory traversal
+  - System information retrieval
+  - Process management
 
-- **Concurrent Programming**:
-  - Thread management and synchronization
-  - Concurrent collections
-  - Executors and thread pools
-  - Future/Promise patterns
-  - Parallel streams and fork/join framework
+- **Advanced C Programming**:
+  - Data structures
+  - Memory management
+  - Pointers and function pointers
+  - File descriptor manipulation
 
-- **Network Programming**:
-  - Socket programming
-  - Client-server architecture
-  - HTTP clients and RESTful services
-  - Non-blocking I/O
+- **Linux/Unix System Interfaces**:
+  - System calls and library functions
+  - User and group management
+  - File permissions and attributes
+  - Terminal I/O
 
-- **Advanced Data Structures and Algorithms**:
-  - Custom data structures
-  - Algorithm optimization
-  - Performance analysis
-  - Space-time complexity trade-offs
+## Exercise Details
 
-- **Design Patterns and Architectural Concepts**:
-  - Advanced design patterns
-  - Clean architecture principles
-  - Dependency injection
-  - Aspect-oriented programming
+### Exercise 1: Simplified Last Command (slast)
+
+Implementation of a simplified version of the Unix/Linux "last" command. This command displays recent user login information from the system's wtmp file, showing user login history with timestamps.
+
+### Exercise 2: Directory Tree Viewer (stree)
+
+Implementation of a directory tree viewer that displays the directory structure in a tree-like format, similar to the Linux `tree` command. The program shows detailed file information including permissions, owner, group, and size, with color coding for different file types.
 
 ## Technologies Used
 
-- **Java**: Primary programming language
-- **Maven/Gradle**: Build automation
-- **JUnit**: Unit testing framework
-- **Mockito**: Mocking framework for testing
-- **Log4j/SLF4J**: Logging frameworks
-- **Spring/Spring Boot**: For dependency injection and web applications
-- **JavaFX**: For GUI applications
+- **C Programming Language**: For system programming and low-level operations
+- **Linux/Unix System Calls**: For interacting with the operating system
+- **Standard C Library**: For basic operations and data structures
 
 ## Getting Started
 
 ### Prerequisites
 
-- JDK 11 or later
-- Maven or Gradle
-- IDE (IntelliJ IDEA, Eclipse, or similar)
+- GCC compiler
+- Linux/Unix operating system
+- Make utility
 
 ### Building and Running
 
@@ -73,74 +67,28 @@ The repository is organized by exercises and projects:
 # Clone this repository
 git clone https://github.com/YairRaviv/Advanced_Programming.git
 
-# Navigate to a specific project
-cd Advanced_Programming/Exercise1
+# Navigate to a specific exercise
+cd Advanced_Programming/Exercise_1
 
 # Build the project
-mvn clean install
+make
 
 # Run the application
-java -jar target/application.jar
+./slast 5    # For Exercise_1, shows last 5 login records
+
+# Or for Exercise_2
+cd ../Exercise_2
+make
+./stree      # Shows directory tree from current directory
 ```
-
-## Example Projects
-
-### Multi-threaded Server
-
-A server application demonstrating:
-- Thread management
-- Concurrent client handling
-- Resource synchronization
-- Non-blocking I/O operations
-
-### Functional Programming Implementation
-
-A project showcasing:
-- Custom functional interfaces
-- Lambda expressions
-- Stream processing
-- Advanced collectors
-
-### Design Pattern Explorer
-
-An application that demonstrates:
-- Implementation of various design patterns
-- When and how to apply different patterns
-- Comparisons between pattern implementations
-- Pattern composition
-
-## Course Information
-
-- **Course**: Advanced Programming
-- **Institution**: Ariel University
-- **Instructor**: [Instructor Name]
-- **Academic Year**: [Year]
-
-## Performance Analysis
-
-The repository includes performance analysis for key algorithms and data structures:
-- Time complexity measurements
-- Memory usage analysis
-- Benchmark comparisons
-- Optimization techniques
 
 ## Learning Outcomes
 
-- Master advanced programming concepts and paradigms
-- Develop efficient and scalable applications
-- Apply appropriate design patterns and architectural principles
-- Implement robust concurrent and parallel systems
-- Write clean, maintainable, and well-tested code
-- Analyze and optimize performance bottlenecks
-
-## Code Quality Standards
-
-This repository adheres to the following standards:
-- Comprehensive unit and integration tests
-- Detailed Javadoc documentation
-- Consistent code style (following Google Java Style Guide)
-- Separation of concerns and modularity
-- Error handling and logging
+- Master system programming concepts in C
+- Develop efficient and reliable system utilities
+- Work with file systems and system information
+- Apply proper error handling in system applications
+- Implement color and formatting in terminal applications
 
 ## License
 
